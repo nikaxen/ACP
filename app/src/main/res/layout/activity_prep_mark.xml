@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="16dp"
+        android:text="Предмет:" />
+
+    <TextView
+        android:id="@+id/tvPrepM_Subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="undefined"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView28"
+        android:layout_alignStart="@+id/textView28" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvPrepM_Subject"
+        android:layout_below="@+id/tvPrepM_Subject"
+        android:layout_marginTop="17dp"
+        android:text="Ведомость:" />
+
+    <TextView
+        android:id="@+id/tvPrepM_Statement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView44"
+        android:layout_below="@+id/textView44"
+        android:text="undefined"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Оценка:"
+        android:layout_below="@+id/tvPrepM_Statement"
+        android:layout_alignStart="@+id/tvPrepM_Statement" />
+
+    <TextView
+        android:id="@+id/tvPrepM_Mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView46"
+        android:layout_below="@+id/textView46"
+        android:text="undefined"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvPrepM_Mark"
+        android:layout_below="@+id/tvPrepM_Mark"
+        android:layout_marginTop="17dp"
+        android:onClick="RemoveMark"
+        android:text="Удалить оценку" />
+</RelativeLayout>

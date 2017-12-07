@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="15dp"
+        android:text="ID Пользователя:" />
+
+    <TextView
+        android:id="@+id/tv_IDUSER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView22"
+        android:layout_below="@+id/textView22"
+        android:text="undefined"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_IDUSER"
+        android:layout_below="@+id/tv_IDUSER"
+        android:layout_marginTop="13dp"
+        android:text="ФИО:" />
+
+    <TextView
+        android:id="@+id/tv_USERFIO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView26"
+        android:layout_below="@+id/textView26"
+        android:text="undefined"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_USERFIO"
+        android:layout_below="@+id/tv_USERFIO"
+        android:layout_marginTop="11dp"
+        android:text="Роль:" />
+
+    <TextView
+        android:id="@+id/tv_USERROLENAME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView29"
+        android:layout_below="@+id/textView29"
+        android:text="undefined"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_USERROLENAME"
+        android:layout_below="@+id/tv_USERROLENAME"
+        android:layout_marginTop="11dp"
+        android:text="Email:" />
+
+    <TextView
+        android:id="@+id/tv_USEREMAIL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView32"
+        android:layout_below="@+id/textView32"
+        android:text="undefined"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_USEREMAIL"
+        android:layout_below="@+id/tv_USEREMAIL"
+        android:layout_marginTop="12dp"
+        android:text="Изменение роли:" />
+
+    <Button
+        android:id="@+id/btnUserChangeUserRole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView34"
+        android:onClick="btnChangeUserRole"
+        android:text="Уст." />
+
+    <Spinner
+        android:id="@+id/spUserChangeUserRole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnUserChangeUserRole"
+        android:layout_alignStart="@+id/textView34"
+        android:layout_below="@+id/textView34"
+        android:layout_toStartOf="@+id/btnUserChangeUserRole" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/spUserChangeUserRole"
+        android:layout_below="@+id/spUserChangeUserRole"
+        android:layout_marginTop="18dp"
+        android:text="Группа студента:"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_DEK_USER_STUDENTGROUP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="undefined"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:layout_below="@+id/textView24"
+        android:layout_alignStart="@+id/textView24"
+        android:layout_alignEnd="@+id/textView33" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Изменение группы студента:"
+        android:visibility="invisible"
+        android:layout_below="@+id/tv_DEK_USER_STUDENTGROUP"
+        android:layout_alignStart="@+id/textView24" />
+
+    <Button
+        android:id="@+id/btnChangeStudGroupForUSER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView33"
+        android:layout_toEndOf="@+id/spUserChangeUserRole"
+        android:onClick="btnAddStudentGroupForUser"
+        android:text="Уст."
+        android:visibility="invisible" />
+
+    <Spinner
+        android:id="@+id/sp_user_studgroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnChangeStudGroupForUSER"
+        android:layout_alignStart="@+id/textView33"
+        android:layout_below="@+id/textView33"
+        android:layout_toStartOf="@+id/btnChangeStudGroupForUSER"
+        android:visibility="invisible" />
+</RelativeLayout>

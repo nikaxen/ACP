@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_prep_statements"
+        android:orderInCategory="100"
+        android:title="Ведомости"/>
+
+    <item
+        android:id="@+id/nav_prep_readyandclosed_statements"
+        android:orderInCategory="100"
+        android:title="Закрытые ведомости"/>
+
+    <item android:id="@+id/nav_profile"
+        android:title="Мой профиль"/>
+</menu>

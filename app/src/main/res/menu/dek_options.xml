@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_dek_create_statement"
+        android:orderInCategory="100"
+        android:title="Создать ведомость"/>
+
+    <item android:id="@+id/nav_dek_all_statements"
+        android:title="Все ведомости"/>
+    <item android:id="@+id/nav_dek_ready_statements"
+        android:title="Сданные ведомости"/>
+    <item android:id="@+id/nav_dek_users_controll"
+    android:title="Пользователи"/>
+    <item android:id="@+id/nav_profile"
+        android:title="Мой профиль"/>
+</menu>

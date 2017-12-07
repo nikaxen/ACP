@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/ScrollView01" android:layout_width="fill_parent" android:layout_height="fill_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:text="№ ведомости:" />
+
+    <TextView
+        android:id="@+id/tvID_STATEMENT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="undefined"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView21"
+        android:layout_alignStart="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Название"
+        android:layout_below="@+id/tvID_STATEMENT"
+        android:layout_alignStart="@+id/tvID_STATEMENT" />
+
+    <TextView
+        android:id="@+id/tvSTATEMENT_TITLE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView25"
+        android:layout_below="@+id/textView25"
+        android:text="undefined"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvSTATEMENT_TITLE"
+        android:layout_below="@+id/tvSTATEMENT_TITLE"
+        android:layout_marginTop="16dp"
+        android:text="Предмет:" />
+
+    <TextView
+        android:id="@+id/tvSUBJECT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView31"
+        android:layout_below="@+id/textView31"
+        android:text="undefined"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="Преподаватель:"
+        android:layout_below="@+id/tvSUBJECT"
+        android:layout_alignStart="@+id/tvSUBJECT" />
+
+    <TextView
+        android:id="@+id/tvPREP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView35"
+        android:layout_below="@+id/textView35"
+        android:text="undefined"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="Группа студентов:"
+        android:layout_below="@+id/tvPREP"
+        android:layout_alignStart="@+id/tvPREP" />
+
+    <TextView
+        android:id="@+id/tvSTUDGROUP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView37"
+        android:layout_below="@+id/textView37"
+        android:text="undefined"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSTUDGROUP"
+        android:layout_marginTop="17dp"
+        android:text="Статус:"
+        android:layout_alignEnd="@+id/textView35"
+        android:layout_alignStart="@+id/tvSTUDGROUP" />
+
+    <TextView
+        android:id="@+id/tvSTATUS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView39"
+        android:layout_below="@+id/textView39"
+        android:text="undefined"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvSTATUS"
+        android:layout_below="@+id/tvSTATUS"
+        android:layout_marginTop="12dp"
+        android:text="Изменение статуса:" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView20"
+        android:onClick="btnChangeStatementStatus"
+        android:text="Уст." />
+
+    <Spinner
+        android:id="@+id/spChangeStatementStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignStart="@+id/textView20"
+        android:layout_below="@+id/textView20"
+        android:layout_toStartOf="@+id/button" />
+
+    <ListView
+        android:id="@+id/listViewMarksInStatementDek"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spChangeStatementStatus" />
+
+</RelativeLayout>
+</ScrollView>

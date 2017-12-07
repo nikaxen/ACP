@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_stud_allmarks"
+        android:orderInCategory="100"
+        android:title="Все мои оценки"/>
+
+    <item android:id="@+id/nav_stud_badmarks"
+        android:title="Неудовлетворительные оценки"/>
+    <item android:id="@+id/nav_profile"
+        android:title="Мой профиль"/>
+</menu>

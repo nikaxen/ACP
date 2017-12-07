@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/ScrollView01" android:layout_width="fill_parent" android:layout_height="fill_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="15dp"
+        android:text="№ Ведомости:" />
+
+    <TextView
+        android:id="@+id/tv_PREP_IDSTATEMENT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView23"
+        android:layout_below="@+id/textView23"
+        android:text="undifined"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_PREP_IDSTATEMENT"
+        android:layout_below="@+id/tv_PREP_IDSTATEMENT"
+        android:layout_marginTop="13dp"
+        android:text="Название:" />
+
+    <TextView
+        android:id="@+id/tv_PREP_TITLESTATEMENT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="undefined"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView27"
+        android:layout_alignStart="@+id/textView27" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_PREP_TITLESTATEMENT"
+        android:layout_below="@+id/tv_PREP_TITLESTATEMENT"
+        android:layout_marginTop="13dp"
+        android:text="Предмет:" />
+
+    <TextView
+        android:id="@+id/tv_PREPSUBJECT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView30"
+        android:layout_below="@+id/textView30"
+        android:text="undefined"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_PREPSUBJECT"
+        android:layout_below="@+id/tv_PREPSUBJECT"
+        android:layout_marginTop="12dp"
+        android:text="Группа студентов:" />
+
+    <TextView
+        android:id="@+id/tv_PREPSTUDGROUP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView36"
+        android:layout_below="@+id/textView36"
+        android:text="undefined"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_PREPSTUDGROUP"
+        android:layout_below="@+id/tv_PREPSTUDGROUP"
+        android:layout_marginTop="19dp"
+        android:text="Добавить оценку:"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnMakeStatementReady"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView23"
+        android:layout_marginEnd="13dp"
+        android:onClick="MakeStatementReady"
+        android:text="Сдать ведомость" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView40"
+        android:layout_below="@+id/textView40"
+        android:layout_marginTop="12dp"
+        android:text="Студент:" />
+
+    <Spinner
+        android:id="@+id/spStudInStudGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView41"
+        android:layout_toEndOf="@+id/textView27" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView41"
+        android:layout_below="@+id/spStudInStudGroup"
+        android:layout_marginTop="12dp"
+        android:text="Оценка:" />
+
+    <Spinner
+        android:id="@+id/spDefaultMARKS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/spStudInStudGroup"
+        android:layout_alignTop="@+id/textView42"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btnAddMarkToStatement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnMakeStatementReady"
+        android:layout_alignStart="@+id/spDefaultMARKS"
+        android:layout_below="@+id/spDefaultMARKS"
+        android:layout_marginTop="10dp"
+        android:onClick="AddMarkToStatement"
+        android:text="Добавить оценку" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView42"
+        android:layout_below="@+id/btnAddMarkToStatement"
+        android:layout_marginTop="12dp"
+        android:text="Оценки в ведомости:"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listViewMarksInStatement"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView43"
+        android:layout_marginTop="11dp" />
+
+</RelativeLayout></ScrollView>
