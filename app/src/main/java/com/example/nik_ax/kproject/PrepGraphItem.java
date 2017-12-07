@@ -47,8 +47,6 @@ public class PrepGraphItem extends AppCompatActivity {
     }
 
     public void CreateGraphForPrep(){
-
-
         entityStatement es = (entityStatement) getIntent().getSerializableExtra("StatementItem");
         Toast.makeText(getApplicationContext(), "CONNECTING TO SERVER", Toast.LENGTH_SHORT).show();
         FetchData fd = new FetchData();
@@ -60,6 +58,5 @@ public class PrepGraphItem extends AppCompatActivity {
         ListView MarksStatementsList = (ListView) findViewById(R.id.LVSudentAndID);
         marksAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, ent_em_List);
         MarksStatementsList.setAdapter(marksAdapter);
-
     }
 }
