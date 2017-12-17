@@ -1,2 +1,4 @@
 # Android - Mobile Statement
-S7B
+Mobile client,
+Server.zip - PHP Server
+
